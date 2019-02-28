@@ -1,8 +1,11 @@
 var current = null;
 $(function() {
-  $(".title-list > a").click(function() {
-    var title = $(this).text();
+  $(".title-list > p").click(function() {
+    var title = $(this)
+      .text()
+      .trim();
     $("#textbox-title").html(title);
+    console.log(title);
     $("#textbox-text").html(texts[title]);
     if (!current) {
       $("#textbox").slideToggle();
