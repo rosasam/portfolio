@@ -4,9 +4,9 @@ $(function() {
     var title = $(this)
       .text()
       .trim();
-    $("#textbox-title").html(title);
+    $("#textbox-title").html(texts[title][0]);
     console.log(title);
-    $("#textbox-text").html(texts[title]);
+    $("#textbox-text").html(texts[title][1]);
     if (!current) {
       $("#textbox").slideToggle();
       current = title;
@@ -21,7 +21,9 @@ $(function() {
 });
 
 var texts = {
-  "Computer Science": `
+  "Computer Science": [
+    "Knowledge: Computer Science",
+    `
 Fundamentally, computer science is the theory and practicalities
 that explain how a computer works. In today’s world, computers
 are being integrated and applied to all kind of products and
@@ -54,8 +56,11 @@ project related to cloud computing and security. During my time
 at Ericsson, I implemented python-based test suites for two
 components in the software. Through the tests, our team managed
 to locate and fix several previously unknown bugs.
-`,
-  "Design Software": `
+`
+  ],
+  "Design Software": [
+    "Knowledge: Design Software",
+    `
 Usually people attribute creativity and an “artistic eye” to
 good designers. But there’s something to be said about designers
 who are capable of efficiently putting their thoughts into a
@@ -72,14 +77,16 @@ at a graphic design company, I have put over 1500 hours combined
 into working with these programs. Furthermore, I have done
 several projects related to photography, movies and graphic
 design in my free time, further adding to these hours. Some
-examples are the two short movies that I made in high school
-using Premiere, the magazines (already mentioned in Design
-Thinking) I did using InDesign, and the over 40 design projects
+examples are the <a href="https://vimeo.com/kehveliproductions">short movie</a> that I made in high school
+using Premiere, the magazines (see more in <a href="gallery.html">the gallery.</a>) I did using InDesign, and the over 40 design projects
 I did using a combination of Photoshop, InDesign and
 Illustrator.
-`,
+`
+  ],
 
-  "Design Thinking": `
+  "Design Thinking": [
+    "Skill: Design Thinking",
+    `
 To quote graphic designer Paul Rand: “Everything is design. Everything”. Good
 design is an essential part of any good product. Design is just more than the
 look of and feel, it’s the interface with which we interact with an product.
@@ -99,9 +106,12 @@ banners, badges and posters. Examples of some these projects can be found in  <a
 Furthermore, in the three courses I have taken in my minor, Aaltonaut, all have
 featured a product design project as part of the course. These projects have
 given me a great opportunity to employ my creativity and design thinking to
-actual product development problems.`,
+actual product development problems.`
+  ],
 
-  "Teamwork and Leadership": `
+  "Teamwork and Leadership": [
+    "Skill: Teamwork and Leadership",
+    `
 Working in groups is inevitable in most lines of work. I can usually get a good
 grasp of what a project entails, and like to take matters into my own hands and
 make sure that the group succeeds. In my time at Aalto, I have learned the value
@@ -116,8 +126,11 @@ of kids on a weekly basis. I have been a scout leader for 5 years, leading
 groups of five to ten people. I have also been in charge of organizing events
 for the scout troop, such as camping trips and scout skill competitions.
 Organizing these events has both been an exercise in both leadership and
-teamwork.`,
-  Persistency: `
+teamwork.`
+  ],
+  Persistency: [
+    "Attitude: Persistency",
+    `
 I’m not one to give up easily. If I set my mind on something, I will try my best
 to achieve whatever goal I have set for myself. This does not mean that I
 wouldn’t have had setbacks and times when I’ve given up; the important thing is
@@ -133,8 +146,11 @@ I have also shown persistence in my studies. When I started studying computer
 science, I had practically zero programming skills, and was frustrated with how
 slowly I wrote code compared to my more experienced peers. Now I am at the verge
 of completing my Bachelor’s program in Computer Science, and work part-time as a
-capable software developer.`,
-  Innovation: `
+capable software developer.`
+  ],
+  Innovation: [
+    "Attitude: Innovation",
+    `
 I am a curious person. I want to know how stuff works, and once I learn that, I
 start thinking how it could be improved.
 <br /><br />
@@ -152,14 +168,24 @@ which I can make meaningful changes for the company. During my time as a graphic
 design intern at MAO Design, I redesigned the look of their school calendars.
 The new design was picked up by a new client. Currently, I work at a
 three-person tech startup, where my ideas have led to a faster workflow when
-using our company’s internal software.`,
-  Modulen: `<img src="assets/img/moduler.jpg" alt="Modulen" />
+using our company’s internal software.`
+  ],
+  Modulen: [
+    "Modulen",
+    `<img src="assets/img/moduler.jpg" alt="Modulen" />
   <p>Modulen is the official magazine for Teknologföreningen. I have layouted 8 
   of these magazines in 2017 to 2019. More can be found at 
-  <a href="https://issuu.com/modulen">Issuu</a></p>`,
-  Miscellaneous: `<img src="assets/img/kort.jpg" alt="Modulen" /> <p>I've also designed badges, 
-  illustrated invitation cards and created other forms of print media.</p>`,
-  Phuxblaskan: `<img src="assets/img/blaskor.jpg" alt="Modulen" /> <p>Phuxblaskan
+  <a href="https://issuu.com/modulen">Issuu</a></p>`
+  ],
+  Miscellaneous: [
+    "Miscellaneous",
+    `<img src="assets/img/kort.jpg" alt="Modulen" /> <p>I've also designed badges, 
+  illustrated invitation cards and created other forms of print media.</p>`
+  ],
+  Phuxblaskan: [
+    "Phuxblaskan",
+    `<img src="assets/img/blaskor.jpg" alt="Modulen" /> <p>Phuxblaskan
   is an information package sent to new students at Aalto. I created a new look for the layout 
   and produced two of these print products.</p>`
+  ]
 };
