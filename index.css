@@ -21,6 +21,18 @@
   margin-bottom: 0.7rem;
 }
 
+.knowledge {
+  color: rgb(6, 123, 159);
+}
+
+.skill {
+  color: rgb(172, 28, 62);
+}
+
+.attitude {
+  color: rgb(125, 31, 172);
+}
+
 p {
   font-family: "Montserrat", sans-serif;
 }

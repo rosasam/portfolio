@@ -153,7 +153,13 @@ design intern at MAO Design, I redesigned the look of their school calendars.
 The new design was picked up by a new client. Currently, I work at a
 three-person tech startup, where my ideas have led to a faster workflow when
 using our company’s internal software.`,
-  Modulen: '<img src="assets/img/moduler.jpg" alt="Modulen" />',
-  Miscellaneous: '<img src="assets/img/kort.jpg" alt="Modulen" />',
-  Phuxblaskan: '<img src="assets/img/blaskor.jpg" alt="Modulen" />'
+  Modulen: `<img src="assets/img/moduler.jpg" alt="Modulen" />
+  <p>Modulen is the official magazine for Teknologföreningen. I have layouted 8 
+  of these magazines in 2017 to 2019. More can be found at 
+  <a href="https://issuu.com/modulen">Issuu</a></p>`,
+  Miscellaneous: `<img src="assets/img/kort.jpg" alt="Modulen" /> <p>I've also designed badges, 
+  illustrated invitation cards and created other forms of print media.</p>`,
+  Phuxblaskan: `<img src="assets/img/blaskor.jpg" alt="Modulen" /> <p>Phuxblaskan
+  is an information package sent to new students at Aalto. I created a new look for the layout 
+  and produced two of these print products.</p>`
 };
